@@ -210,7 +210,7 @@ main.productMain {
         color: black; }
     main.productMain ul.productList li.game:last-child {
       margin: initial; }
-  main.productMain .addGame {
+  main.productMain .addGameContainer {
     width: 100%;
     max-width: 1800px;
     margin: 0 auto;
@@ -219,9 +219,11 @@ main.productMain {
     right: 20px;
     left: 0;
     transition: all 0.5s ease; }
-    main.productMain .addGame img {
-      float: right;
-      vertical-align: middle; }
+    main.productMain .addGameContainer a {
+      float: right; }
+      main.productMain .addGameContainer a img {
+        float: right;
+        vertical-align: middle; }
 
 .white-popup {
   position: relative;
@@ -277,6 +279,10 @@ main.productMain {
         .white-popup section .addInfo .gameOptions .delete,
         .white-popup section .addInfo .gameOptions .cancel {
           background-color: #B21111; }
+
+form.editGame input,
+form.addGame input {
+  width: 100%; }
 
 /*****************r*************************
 ****************  GAME LIST  ***************

@@ -261,7 +261,7 @@ main.productMain{
 			margin: initial;
 		}
 	}
-	.addGame{
+	.addGameContainer{
 	    width: 100%;
 	    max-width: 1800px;
 	    margin: 0 auto;
@@ -270,15 +270,15 @@ main.productMain{
 	    right: 20px;
 	    left: 0;
 	    transition: all 0.5s ease;
-		img{
-			float: right;
-			vertical-align: middle;
+	    a{
+	    	float: right;
+			img{
+				float: right;
+				vertical-align: middle;
+
+			}
 		}
 	}
-	// :active{
-	// 	transform: rotate(45deg);
-	// 	transition: all 0.5s ease;
-	// }
 }
 
 // EDIT/DELETE/ADD GAME POPUP
@@ -337,6 +337,13 @@ main.productMain{
 			}
 		}
 	}	
+}
+
+form.editGame,
+form.addGame{
+	input{
+		width: 100%;
+	}
 }
 /*****************r*************************
 ****************  GAME LIST  ***************

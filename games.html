@@ -158,7 +158,7 @@
 					</a>
 				</li>
 			</ul>
-			<a class="addGame open-popup-link" href="#add-popup"><img src="build/img/add-button.png" alt=""></a>
+			<div class="addGameContainer"><a class="addGame open-popup-link" href="#add-popup"><img src="build/img/add-button.png" alt="plus-sign"></a></div>
 		</main>
 	</div>
 	<!-- EDIT/DELETE POPUP -->
@@ -166,12 +166,14 @@
   		<section>
   			<div class="gameThumbnail"><img src="http://via.placeholder.com/250x300"></div>
   			<div class="gameInfo">
-  				<ul>
-					<li><strong>Title:</strong> Lorem Ipsum</li>
-					<li><strong>Genre:</strong> Lorem Ipsum</li>
-					<li><strong>Release:</strong> Lorem Ipsum</li>
-					<li><strong>Platform(s):</strong> Lorem Ipsum</li>
-				</ul>
+  				<form class="editGame" action="/.php">
+					<input class="description" type="text" name="Description" placeholder="enter game description"><br>
+					<input class="id" type="text" name="ID" placeholder="enter game id"><br>
+					<input class="image" type="text" name="Image" placeholder="upload game image"><br>
+					<input class="name" type="text" name="Name" placeholder="enter game name"><br>
+					<input class="price" type="text" name="Price" placeholder="enter game price"><br>
+					<input class="publisher" type="text" name="Publisher" placeholder="enter game publisher"><br>
+				</form>
 				<div class="gameOptions">
 					<a href="" class="edit">Edit</a>
 					<a href="" class="delete">Delete</a>
@@ -184,12 +186,14 @@
   		<section>
   			<div class="thumbnailUpload"><img src="http://via.placeholder.com/250x300"></div>
   			<div class="addInfo">
-  				<ul>
-					<li><strong>Title:</strong> Lorem Ipsum</li>
-					<li><strong>Genre:</strong> Lorem Ipsum</li>
-					<li><strong>Release:</strong> Lorem Ipsum</li>
-					<li><strong>Platform(s):</strong> Lorem Ipsum</li>
-				</ul>
+  				<form class="addGame" action="/.php">
+					<input class="description" type="text" name="Description" placeholder="enter game description"><br>
+					<input class="id" type="text" name="ID" placeholder="enter game id"><br>
+					<input class="image" type="text" name="Image" placeholder="upload game image"><br>
+					<input class="name" type="text" name="Name" placeholder="enter game name"><br>
+					<input class="price" type="text" name="Price" placeholder="enter game price"><br>
+					<input class="publisher" type="text" name="Publisher" placeholder="enter game publisher"><br>
+				</form>
 				<div class="gameOptions">
 					<a href="" class="save">Save</a>
 					<a href="" class="cancel">Cancel</a>
